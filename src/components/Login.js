@@ -46,8 +46,8 @@ const Login = () => {
       >
         Gemini AI
       </p>
-      <section className="d-flex justify-content-center align-items-center  w-100 h-100">
-        <form className="border rounded mt-3 cus-form p-2 mb-3">
+      <section className="d-flex justify-content-center align-items-center   h-100">
+        <form className="border rounded mt-3 cus-div p-2 mb-3">
           <h2 className="text-center p-2">
             <span>Log In</span>
           </h2>
