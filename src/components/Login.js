@@ -11,9 +11,11 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const { dispatch } = useContext(BackendContext);
   const navigate = useNavigate();
+  const[loading,setloading] = useState(false)
 
   const login = async () => {
     try {
+      setloading(true)
       const loginuser = await axios.post(
         "https://full-stack-ai-chatbot-1.onrender.com/api/loginuser",
         { username: username, password: password }
@@ -33,12 +35,17 @@ const Login = () => {
         setuserName("");
         setPassword("");
       } else {
-        alert("error occured please reload website");
+        toast("error occured please reload website");
       }
+    }finally{
+      setloading(false)
     }
   };
   return (
     <div>
+       <div className="container">
+        <p className={loading ? 'loader' :''}></p>
+      </div>
       <ToastContainer position='top-center'/>
       <p
         className="fs-1 fw-medium text-center mt-2 mb-1"
