@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+.m{
+    position: sticky;
+    top: 0;
+    transition: 0.3s;
+}
+.back{
+    background-color: #d4d7da;
+}
+
+.sidenav{
+    height: 100vh;
+    background-color: #d4d7da;
+    padding: 25px 15px;
+    font-family:"Outfit", sans-serif;
+    color: black;
+}
+
+.questions{
+  width: 70px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu-bar{
+    width:200;
+    height: 200;
+    font-size: 40px;
+    display: none;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 4px;
+    margin: 10px 0px 0px 5px;
+    transition: 0.3s;
+}
+.menu-bar:hover{
+    background-color: #aaadb0;
+    color: white;
+   
+}
+.plus-bar{
+    display: inline-flex;
+    background-color: #e6eaf1;
+    align-items: center;
+    margin-top: 50px;
+    padding-top: 15px;
+    padding: 0px 15px;
+    border-radius: 50px;
+    color: grey;
+    cursor: pointer;
+
+}
+.bottom{
+    display: inline-flex;
+    flex-direction: column;
+}
+.RECENT-MAIN{
+    height: 400px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    
+}
+
+.recent-div{
+    margin-top: 10px;
+    align-items: center;
+    gap: 15px;
+    padding:  0px 15px;
+    border-radius: 50px;
+    background-color: rgb(216, 201, 201);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.recent-div:hover{
+    background-color:rgb(235, 229, 229) ;
+}
+.activity-div{
+   display: inline-flex;
+   gap: 10px;
+   cursor: pointer;
+   margin-top: 10px;
+}
+.setting-div{
+    display: inline-flex;
+    gap: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.help-div{
+    margin-top: 10px;
+    display: inline-flex;
+    gap: 10px;
+    cursor: pointer;
+}
+.plus{
+    font-size: 2rem;
+}
+.recent{
+    font-weight: bolder;
+    font-size: 15px;
+}
+.activity{
+    font-size: 25px;
+    font-weight: bold;
+}
+.setting{
+    font-size: 25px;
+    font-weight: bold;
+}
+.help{
+    font-size: 25px;
+    font-weight: bold;
+}
+.recent-p{
+    margin-top: 10px;
+    margin-left: 5px;
+    position: relative;
+    top: 9px;
+}
+@media (max-width:720px){
+   .menu-bar{
+    display: block;
+   }
+   .noShow{
+    position: absolute;
+    left: -999px;
+    transition: 0.2s;
+   }
+   .show{
+    left: 0px;
+   }
+   .m{
+    height: 100%;
+    position: fixed;
+    z-index: 3;
+   }
+   .RECENT-MAIN{
+    height: 200px;
+   }
+
+}

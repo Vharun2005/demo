@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+.main{
+    flex: 1;
+    min-height: 100vh;
+    font-family: "Outfit", sans-serif;
+}
+li{
+    list-style: none;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-div{
+    padding-left: 30px;
+    font-size: 25px;
+    padding-top: 10px;
+    color: #4eaef3
+}
+.user{
+    width: 400;
+    height: 50;
+    background-color: blue;
+    border-radius: 50px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.user-img{
+    width: 200;
+    height: 50px;
+}
+.width{
+    width: 200px;
+    height: 200px;
+}
+.custom-card{
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: rgb(242, 223, 223);
+}
+.custom-card:hover{
+    background-color: rgb(189, 178, 178);
+}
+.custom-p{
+    padding: 20px;
+}
+.custom-search{
+    background-color: antiquewhite;
+    position: fixed;
+    bottom: 0;
+    color: black;
+    width: 100vw;
+}
+.main-bottom{
+    margin: 12px 0px;
+}
+.line{
+    line-height: 2;
+    margin-bottom: 55px;
+}
+.cus-container{
+    background-color: rgb(249, 240, 240);
+    z-index: 30;
+}
+.result-title{
+    gap:20px
+}
+.res-data{
+    gap:20px
+}
+.cus-input{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.display{
+    display: none;
+}
+.loader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.loader hr{
+    border-radius: 4px;
+    border:none;
+    background-color: #f6f7f8;
+    background: linear-gradient(to right,#4eaef3,#e6c6c6,#4eaef3);
+    background-size: 800px 50px;
+    height: 20px;
+    animation: loader 3s infinite linear;
+}
+@keyframes loader{
+    0%{
+        background-position: -800px 0px;
+    }
+    100%{
+        background-position: 800px 0px;
+    }
+
+}
+@media (max-width:600px) {
+    .cards{
+        display: none;
+    }
+    .cus-to{
+        margin-top: 60px;   
+    }
+    .cus-media{
+        margin-right: 50px;
+    }
+}
+@media (max-width:768px) {
+    .cards{
+        display: none;
+    }
+   
+}
+@media (max-width:320px){
+    .logo-div{
+        padding-left: 3px;
+        color: #4eaef3;
+    }
+}
+@media (max-width:570px) {
+    .custom-card{
+        margin-left: 0px;
+        margin-right: 2px;
+    }
+}
+@media(max-width:1240px){
+    .custom-p{
+        padding: 0px;
+    }
+}
