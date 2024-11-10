@@ -1,12 +1,14 @@
-.cus-input-signup{
-    width: 400px;
-    height: 35px;
-    outline: none;
+
+.cus-div{
+    width: 450px;
 }
 
 
 @media (max-width:375px){
     .cus-input-signup{
         width: 210px;
+    }
+    .cus-div{
+        width: 250px;
     }
 }
