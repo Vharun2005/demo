@@ -221,7 +221,7 @@ const Main = () => {
                     alt=''
                   ></img>
                   {loading ? (
-                    <div className="loader">
+                    <div className="loaderr">
                       <hr />
                       <hr />
                       <hr />
